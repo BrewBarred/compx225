@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Office Product</title>
+	</head>
+	<body>
+		<h1>Dashboard</h1>
+		
+		<h2>Office Products Table<h2>
+		
+		<?php requires_once('db.php');
+			mysqli_close($con);
+		?>
+	</body>
+</html>
+
+/*---------------*/
+/*COSTUME QUERIES*/
+/*---------------*/
+
+/*Query the database for a list of all costumes*/
+SELECT DISTINCT(name) FROM costumes;
+
+/*Fetch a costume based on costume id from rentals table (rentals.php)*/
+SELECT * FROM costumes c
+INNER JOIN rentals r
+WHERE c.id = r.costume_id;
+
+/*Add a new costume to the costume table (costume.php) using all properties for a costume (all are non-null)*/
+
+
+
+/*--------------*/
+/*RENTAL QUERIES*/
+/*--------------*/
+
+/*Return a list of all rentals based on the passed costume id*/
+
+
+create a php script that shows us the name, price and product information of all the products:

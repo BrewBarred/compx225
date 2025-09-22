@@ -1,0 +1,65 @@
+/* style.css – clean, consistent styling for all pages */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+    color: #333;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav h2 {
+    display: inline-block;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #222;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #aaa;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}

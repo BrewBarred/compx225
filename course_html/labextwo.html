@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2 - COMPX225</title>
+</head>
+
+<body>
+<!-- START BODY HEADER -->
+<header>
+    <!-- reference to the top of the page-->
+    <a id="top"></a>
+    <!-- same page opening example using javascript -->
+    <!-- <button id="btn_view" onclick="window.location.href='a1.pdf'">View handout</button> | -->
+    <button id="syntax_checker" onclick="window.open('https://validator.w3.org/nu/#textarea', '_blank')">Syntax checker</button> ||
+    <!-- header button to open handout -->
+    <button id="btn_view" onclick="window.open('../lab_exercises/lab2.pdf', '_blank')">View handout</button> ||
+    <!-- header button to submission page on moodle -->
+    <button id="btn_submit" onclick="window.open('https://elearn.waikato.ac.nz/mod/assign/view.php?id=2088304', '_blank')">Add submission</button>
+    <hr>
+    <br>
+
+</header>
+
+<!-- START LAB 2 -->
+<!-- create a table consisting of 4 columns and 7 rows -->
+<table cellspacing="20">
+    <!-- create row 1 -->
+    <tr>
+        <th>Sticky fingers</th>
+        <th>Strangely arousing</th>
+        <th>Hoobastank</th>
+        <th>Hootie and the blowfish</th>
+    </tr>
+
+    <!-- create row 2 -->
+    <tr>
+        <td><a id="cyclone" target="_blank" href="https://www.youtube.com/watch?v=zzHouyi6t4g">Cyclone (The Village Sessions)</a></td>
+        <td><a id="kupenga" target="_blank" href="https://www.youtube.com/watch?v=UOqiODEBtRE">Kupenga</a></td>
+        <td><a id="the_reason" target="_blank" href="https://www.youtube.com/watch?v=fV4DiAyExN0">The Reason</a></td>
+        <td><a id="let_her_cry" target="_blank" href="https://www.youtube.com/watch?v=1aVHLL5egRY">Let Her Cry</a></td>
+    </tr>
+
+    <!-- create row 3 -->
+    <tr>
+        <td><a id="live_and_acoustic" target="_blank" href="https://www.youtube.com/watch?v=FBSlHsjrQ7U&t=2448s">Live & Acoustic</a></td>
+        <td><a id="extended_play" target="_blank" href="https://www.youtube.com/watch?v=Gw1Ulbf6TE8&list=PLQxx7MHhGOL26bTXWgL0F5daIwwluiKP_">Extended Play</a></td>
+        <td><a id="the_reason_acoustic" target="_blank" href="https://www.youtube.com/watch?v=VvQ2JRweUlk">The Reason (Acoustic)</a></td>
+        <td><a id="only_wanna_be_with_you" target="_blank" href="https://www.youtube.com/watch?v=Ln6WQqRDrCo">Only Wanna Be With You</a></td>
+    </tr>
+
+    <!-- row 4 -->
+    <tr>
+        <td><a id="love_letter" target="_blank" href="https://www.youtube.com/watch?v=MkRQ-P2KCSs&list=RDEMhaMKUeGC2nvOw4Yj38RMkQ&index=2">A Love Letter From Me To You (The Village Sessions)</a></td>
+        <td><a id="caught_my_eye" target="_blank" href="https://www.youtube.com/watch?v=_j_auiI519c">Caught My Eye</a></td>
+        <td><a id="running_away" target="_blank" href="https://www.youtube.com/watch?v=kxwsu8JfvVU">Running Away</a></td>
+        <td><a id="hold_my_hand" target="_blank" href="https://www.youtube.com/watch?v=xoW3bqnr7tw">Hold My Hand</a></td>
+    </tr>
+
+    <!-- row 5 -->
+    <tr>
+        <td><a id="how_to_fly" target="_blank" href="https://www.youtube.com/watch?v=hKX9rEEgb0I">How To Fly</a></td>
+        <td><a id="airplanes" target="_blank" href="https://www.youtube.com/watch?v=ymRKvHUWCyA">Airplanes</a></td>
+        <td><a id="out_of_control" target="_blank" href="https://www.youtube.com/watch?v=E17HnEMloDc">Out Of Control</a></td>
+        <td><a id="time" target="_blank" href="https://www.youtube.com/watch?v=oFLysouG86I">Time</a></td>
+    </tr>
+
+    <!-- row 6 -->
+    <tr>
+        <td><a id="caress_your_soul" target="_blank" href="https://www.youtube.com/watch?v=mgq8EA82T-Q">Caress Your Soul</a></td>
+        <td><a id="rain" target="_blank" href="https://www.youtube.com/watch?v=fKo4yKgalb0&list=PLhDGI745_QFFL0HR8t11ldyiXu9CfuZaO&index=2">Rain</a></td>
+        <td><a id="disappear" target="_blank" href="https://www.youtube.com/watch?v=RpssSqhvKJQ">Disappear</a></td>
+        <td><a id="interstate_love_song" target="_blank" href="https://www.youtube.com/watch?v=zA1v-t9Vw8Y">Interstate Love Song</a></td>
+    </tr>
+
+    <!-- row 7 -->
+    <tr>
+        <td><a id="kiss_the_breeze" target="_blank" href="https://www.youtube.com/watch?v=O0mqCyl5OEM">Kiss The Breeze</a></td>
+        <td><a id="what_a_life" target="_blank" href="https://www.youtube.com/watch?v=Fi_ggwzaFVA&list=PLhDGI745_QFFL0HR8t11ldyiXu9CfuZaO&index=4">What A Life</a></td>
+        <td><a id="inside_of_you" target="_blank" href="https://www.youtube.com/watch?v=WcSZ7deAHbw">Inside Of You</a></td>
+        <td><a id="old_man_and_me" target="_blank" href="https://www.youtube.com/watch?v=B5xTrL3araM&list=PLxHg_tj7TNO1cEpyCfbdJinEBlC-rq5os&index=4">Old Man And Me</a></td>
+    </tr>
+</table>
+<br>
+
+<!-- create a form using the GET method -->
+<form method="POST">
+    <hr>
+    <!-- add 4 checkboxes to the form -->
+    <label for="cb1">Option 1: </label>
+    <input id="cb1" type="checkbox" name="checkbox1" value="true">
+    <br>
+
+    <label for="cb2">Option 2: </label>
+    <input id="cb2" type="checkbox" name="checkbox2" value="true">
+    <br>
+
+    <label for="cb3">Option 3: </label>
+    <input id="cb3" type="checkbox" name="checkbox3" value="true">
+    <br>
+
+    <label for="cb4">Option 4: </label>
+    <input id="cb4" type="checkbox" name="checkbox4" value="true">
+    <hr>
+
+    <!-- add 4 grouped radio buttons (grouped by sharing name) -->
+    <label for="radio1">Radio 1: </label>
+    <input id="radio1" type="radio" name="radio" value="1">
+    <label for="radio2">Radio 2: </label>
+    <input id="radio2" type="radio" name="radio" value="2">
+    <label for="radio3">Radio 3: </label>
+    <input id="radio3" type="radio" name="radio" value="3">
+    <label for="radio4">Radio 4: </label>
+    <input id="radio4" type="radio" name="radio" value="4">
+    <hr>
+
+    <!-- add labelled username input box -->
+    <div>
+        <label id="lab_username" for="username">Username: </label>
+        <input id="username" type="text" name="user" placeholder="Enter your username">
+    </div>
+    <br>
+
+    <!-- add labeled password input box -->
+    <div>
+        <label id="lab_password" for="password">Password: </label>
+        <input id="password" type="password" name="pass" placeholder="Enter your password">
+    </div>
+    <br>
+
+    <!-- add submit button -->
+    <div>
+        <button id="btn_submit_form" type="submit">Submit</button>
+    </div>
+    <hr>
+
+</form>
+
+<!-- create a form that looks like the comment box in the lab 2 briefing -->
+<form method="POST">
+    <!-- create the title -->
+    <h1>Post your comments</h1>
+    <!-- create a fieldset to group the rest of the controls together in a border -->
+    <fieldset>
+        <!-- create a name input box -->
+        <div>
+            <label id="lab_name" for="name">Name</label>
+            <input id="name" name="name" type="text">
+        </div>
+
+        <!-- create an e-mail input box -->
+        <div>
+            <label id="lab_email" for="email">E-mail</label>
+            <input id="email" name="email" type="email">
+        </div>
+
+        <!-- create a city input box -->
+        <div>
+            <label id="lab_city" for="city">City</label>
+            <input id="city" name="city" type="text">
+        </div>
+
+        <!-- create a comments text area -->
+        <div>
+            <label id="lab_comments" for="comments">Comments</label>
+        </div>
+        <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+
+        <!-- create a submit button -->
+        <div>
+            <button id="btn_submit_comments" type="submit">Submit comment</button>
+        </div>
+
+    </fieldset>
+</form>
+<!-- END LAB EX 2 -->
+
+<!-- START BODY FOOTER -->
+<footer>
+    <hr>
+    <p>
+        <!-- redirects user to the "top" anchor at the top of the page -->
+        <a href="#top">Top of page</a> |
+        <!-- redirects user to the next logical page -->
+        <a href="labexthree.html">Next page</a> |
+        <!-- returns the user to the compx225 homepage -->
+        <a href="../">Return to homepage</a>
+    </p>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+/* used to set default attributes */
+html {
+    /* main background color */
+    background-color: tan;
+    font-size: 22px;
+
+    /* creates a nice margin on either side of webpage */
+    margin-left: 3.5%;
+    margin-right: 2%;
+
+    /* improves resizing of some elements */
+    box-sizing: border-box;
+}
+
+/* heading 1 design (big yellow letters in logo) */
+h1 {
+    color: #ffa503;
+    font-size: clamp(2rem, 6vw, 4rem);
+}
+
+/* heading 2 design (smaller white letter in logo) */
+h2 {
+    /* set appearance attributes */
+    color: white;
+    font-size: clamp(1rem, 3vw, 2rem);
+    margin-right: 5%;
+    line-height: 300%;
+}
+
+/* headnig 3 design (main sub-headings) */
+h3 {
+    border: 10px solid black;
+    color: maroon;
+    position: relative;
+    bottom: 0px;
+
+    text-decoration: underline;
+    font-size: 180%;
+    opacity: 0.5;
+    text-align: center;
+}
+
+/* heading 4 design (past events sub-subheadings) */
+h4 {
+    background-color: brown;
+    color: tan;
+    text-align: center;
+    font-weight: 500px;
+    text-decoration: underline;
+}
+
+/* paragraph design */
+p {
+    border: 3px solid black;
+    background-color: brown;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    opacity: 0.7;
+    padding: 5%;
+}
+
+/* container for all club logo elements */
+.container_club_logo {
+    position: relative;
+    background-color: darkred;
+
+    /* set border properties for logo grouping effect */
+    border: 5px solid black;
+
+    /* set flex direction to vertically stack waikato logo/club title */
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+
+    padding: 1%;
+    /* set margin properties to prevent out of bounds logo */
+    margin: 0px;
+}
+
+/* contains just the club logo's title elements */
+.container_club_logo_title {
+    border: 1px solid black;
+
+    /* set font properties */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-weight: 480;
+    height: 70%;
+    font-family: times-new-roman;
+
+
+    cursor: default;
+    padding: 10px;
+}
+
+/* contains the navigation bar items */
+.container_nav {
+    border: 5px solid black;
+    background-color: red;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+/* navigation page button design */
+.btn_nav {
+    background-color: #660000;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-family: sans-serif;
+    /* change mouse look on mouse over */
+    cursor: pointer;
+    /* lets you use padding/margin properly */
+    transition: 0.3s ease;
+    /* set even width based on page size */
+    width: 33.33%;
+    height: auto;
+
+    float: left;
+
+    padding: 15px;
+}
+
+/* hover effect for navigation buttons */
+.btn_nav:hover {
+    /* set custom hover over navigation button options here */
+    opacity: 0.6;
+    background-color: #330000;
+    color: yellow;
+    /* zooms in on buttons on hover */
+    transform: scale(1.03);
+    text-decoration: underline;
+}
+
+/* running man logo */
+#container_logo_winner {
+    color: purple;
+    z-index: 999;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 8%;
+    overflow: contain;
+    display-content: center;
+}
+
+/* container for the uni of waikato logo */
+.container_logo_waikato {
+    background-color: black;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    opacity: 0.85;
+}
+
+.logo_waikato {
+    position: relative;
+    height: 40%;
+    max-width: 20%;
+    right: 0%;
+    top: 0%;
+}
+
+/* adjust default image settings to help resizing */
+img {
+    object-fit: scale-down;
+    max-inline-size: 100%
+}
+
+/* adjust table appearance for upcoming events table */
+table {
+    gap: 10%;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+}
+
+/* table rows */
+tr {
+    border-bottom: 3px solid brown;
+}
+
+/* table headers */
+th {
+    padding: 1%;
+    color: black;
+    border-bottom: 5px solid brown;
+    opacity: 0.90;
+    text-align: left;
+
+}
+
+/* table data */
+td {
+    padding: 20px;
+    font-size: 0.8em;
+    opacity: 0.90;
+}
+
+/*photo citation */
+.citation {
+    color: white;
+    background-color: black;
+    font-size: 50%;
+    opacity: 0.5;
+    text-align: left;
+}
+
+.container_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 20px; /* space between items */
+  padding: 20px;
+}
+
+.grid_item {
+  border: 4px solid black;
+  background-color: maroon;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.form-container {
+  padding: 5%;
+  background-color: brown
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  font-family: sans-serif;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  color: navy;
+  padding: 1%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+input, textarea {
+background-color: black;
+color: white;
+/* don't know why, but this seems to line up registration form input boxes */
+width: 98%;
+text-align: center;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  /* curves input box corners*/
+  border-radius: 8px;
+  font-size: 1em;
+  padding: 1%;
+  opacity: 0.9;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 1%;
+  background-color: maroon;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #660000;
+  font-size: 1.2em;
+}
